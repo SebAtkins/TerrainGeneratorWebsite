@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Terrain Generator {% endblock %}</h1>
+    <a href="{{ url_for('genTerrain') }}">
+        <!--<span class="badge badge-warning">Generate Terrain</span>-->
+        <h2>Generate Terrain</h2>
+    </a>
+    <a href="{{ url_for('loadHeightmap') }}">
+        <h2>Load Heightmap</h2>
+    </a>
+    <a href="{{ url_for('genHeightmap') }}">
+        <h2>Generate Heightmap</h2>
+    </a>
+{% endblock %}
